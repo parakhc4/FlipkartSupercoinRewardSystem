@@ -115,7 +115,6 @@ public class WalletService {
     // balance
 
     public int getValidBalance(User user) {
-        expireOldBatches(user);
         return user.getWallet().getCoinBatches().stream()
                 .mapToInt(CoinBatch::getAmount)
                 .sum();

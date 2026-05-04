@@ -26,7 +26,7 @@ public class Driver {
         } catch (Exception e) {
             System.out.println("[ERROR] " + e.getMessage());
         }
-
+        system.spendCoins("O-105", 40);
         system.setCurrentDay(36);
         system.cancelOrder("O-105");       // Refund 40
 
