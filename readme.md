@@ -9,6 +9,7 @@ javac -d out $(find src -name "*.java")
 ### Run :
 ```bash
 java -cp out driver.Driver
+```
 
 ## Step 1 : Identified Entities
 
